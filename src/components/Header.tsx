@@ -1,16 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Header() {
+ 
   return (
     <Container>
       <NavBar>
-        
-          <Link to="/">
+        <Link to="/">
+          
+            
             <img src="/logo.svg" alt="" />
-          </Link>
-        
+          
+        </Link>
+
         <Links>
           <Link to="/chat">chat</Link>
           <Link to="/Footer">footer</Link>
@@ -24,7 +28,7 @@ export default Header;
 
 const Container = styled.div`
   width: 100%;
-  height: 6vh;
+  height: 5.5vh;
   background-color: red;
   align-items: center;
   text-align: center;
@@ -43,7 +47,8 @@ const NavBar = styled.div`
   justify-content: space-around;
 
   img {
-    height: calc(80px + 2vw) ;
+    height: calc(65px + 2.2vw);
+    max-height: 130px;
   }
 `;
 const Links = styled.div`
@@ -55,6 +60,4 @@ const Links = styled.div`
   display: flex;
 `;
 
-// const SvgContainer = styled.div`
-// height: 100%;
-// `;
+
