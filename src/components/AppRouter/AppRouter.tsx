@@ -14,6 +14,6 @@ export default AppRouter
 
 const Container= styled.div`
 width: 100%;
-height:60vh;
+height:90vh;
 background-color: blue;
 `

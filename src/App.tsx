@@ -1,21 +1,28 @@
 import React from "react";
-import Header from "./components/Header/Header";
-import Footer from "./components/footer/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import AppROuter from "./components/AppRouter/AppRouter";
 import { BrowserRouter as Router } from "react-router-dom";
-import "./App.css";
+
+import styled from "styled-components";
 
 function App() {
   return (
-    <div className="App">
+    <AppStyle>
       <Router>
         <Header />
         <AppROuter />
         <AppROuter />
         <Footer />
       </Router>
-    </div>
+    </AppStyle>
   );
 }
 
 export default App;
+
+const AppStyle = styled.div`
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+`;
