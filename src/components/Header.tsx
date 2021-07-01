@@ -1,24 +1,35 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 function Header() {
- 
   return (
     <Container>
       <NavBar>
         <Link to="/">
-          
-            
-            <img src="/logo.svg" alt="" />
-          
+          <img src="/logo.svg" alt="" />
         </Link>
 
         <Links>
-          <Link to="/chat">chat</Link>
-          <Link to="/Footer">footer</Link>
+          <Link to="/about">About</Link>
+          <Link to="/work">Work</Link>
+          <Link to="/contact">Contact</Link>
         </Links>
+        <Social>
+          <a href="https://www.linkedin.com/in/tal-mamistvalov/">
+            {" "}
+            <LinkedInIcon style={{ fontSize: 25, color: "#00ffc3" }} />
+          </a>
+          <a href="">
+            <GitHubIcon style={{ fontSize: 25, color: "#00ffc3" }} />
+          </a>
+          <a href="">
+            <FacebookIcon style={{ fontSize: 25, color: "#00ffc3" }} />
+          </a>
+        </Social>
       </NavBar>
     </Container>
   );
@@ -29,12 +40,15 @@ export default Header;
 const Container = styled.div`
   width: 100%;
   height: 5.5vh;
-  background-color: red;
+  background-color: transparent;
   align-items: center;
   text-align: center;
   justify-content: center;
   display: flex;
+  flex-direction: column;
   margin: auto;
+  position: fixed;
+  margin-top: 1rem;
 `;
 
 const NavBar = styled.div`
@@ -52,12 +66,22 @@ const NavBar = styled.div`
   }
 `;
 const Links = styled.div`
-  width: 60%;
+  width: 40%;
   height: 100%;
-  background-color: plum;
+  background-color: transparent;
   align-items: center;
   justify-content: space-around;
   display: flex;
+  a {
+    color: #000;
+    color: #00ffc3;
+
+    text-decoration: none;
+  }
 `;
 
-
+const Social = styled.div`
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+`;
