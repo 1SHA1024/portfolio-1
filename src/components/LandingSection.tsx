@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import * as Blogging from '/blogging.svg'
 function AppRouter() {
   return (
     <Container>
@@ -18,7 +18,8 @@ function AppRouter() {
         </Text>
       </Contant>
       <Contant2>
-        <img src="/portrait.jpg" alt="" />
+        <img src="/blogging.svg" alt="" />
+       
       </Contant2>
     </Container>
   );
@@ -59,7 +60,11 @@ const Contant = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-image: url("/blob.svg");
+  /* background-image: url("/blob.svg"); */
+  background-attachment: fixed;
+  background-size: 300px 100px;
+  background-position:center; 
+  background-repeat: no-repeat;
 `;
 
 const Contant2 = styled.div`

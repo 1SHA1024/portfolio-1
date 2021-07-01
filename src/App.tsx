@@ -32,7 +32,7 @@ function App() {
       </Router>
       {!(innerWidth <= 960) ? (
         <Contact variants={containerVarient} whileHover="hover" animate="icon">
-          <img src="/social-media.svg" alt="" />
+          <img src="/blogging.svg" alt="" />
         </Contact>
       ) : (
         ""
@@ -52,8 +52,8 @@ const AppStyle = styled.div`
 `;
 
 const Contact = styled(motion.div)`
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 60px;
   opacity: 0.3;
   background-color: #887c88;
   border-radius: 10px;
@@ -63,7 +63,7 @@ const Contact = styled(motion.div)`
   overflow: hidden;
 
   img {
-    width: 45px;
+    width: 100%;
     position: absolute;
     align-items: flex-end;
     justify-content: center;
@@ -73,7 +73,7 @@ const Contact = styled(motion.div)`
 `;
 
 const MainLanding = styled.div`
-  background-image: url("/portrait.jpg");
+  /* background-image: url("/blogging.svg"); */
   /* background-image: url('/logo.svg'); */
   background-position: center;
   background-repeat: no-repeat;
