@@ -1,0 +1,8 @@
+export { default as Blob } from './Blob'
+export { default as Blogging } from './Blogging'
+export { default as Logo } from './Logo'
+export { default as SocialMedia } from './SocialMedia'
+export { default as Web1 } from './Web1'
+export { default as Web2 } from './Web2'
+export { default as Web3 } from './Web3'
+export { default as Web4 } from './Web4'

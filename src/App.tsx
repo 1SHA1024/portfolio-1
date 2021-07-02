@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import LandingSection from "./components/LandingSection";
 import { BrowserRouter as Router } from "react-router-dom";
 import { motion } from "framer-motion";
+import {Web1} from './icons'
 
 import styled from "styled-components";
 
@@ -32,7 +33,8 @@ function App() {
       </Router>
       {!(innerWidth <= 960) ? (
         <Contact variants={containerVarient} whileHover="hover" animate="icon">
-          <img src="/blogging.svg" alt="" />
+          {/* <img src="/blogging.svg" alt="" /> */}
+          {/* <Web1/> */}
         </Contact>
       ) : (
         ""

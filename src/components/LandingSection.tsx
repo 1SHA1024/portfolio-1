@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import * as Blogging from '/blogging.svg'
+// import * as Blogging from '/blogging.svg'
+import Web1 from '../icons/Web1'
 function AppRouter() {
   return (
     <Container>
@@ -18,8 +19,8 @@ function AppRouter() {
         </Text>
       </Contant>
       <Contant2>
-        <img src="/blogging.svg" alt="" />
-       
+        {/* <img src="/blogging.svg" alt="" /> */}
+       {/* <Web1/> */}
       </Contant2>
     </Container>
   );
@@ -32,8 +33,10 @@ const Container = styled.div`
   height: 100vh;
   background-color: transparent;
   color: #0ccda1;
-  background-image: url("/Mirage.jpg");
+  background-image: url("/svg/land.svg");
   display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* align-content: flex-start; */
 `;
 
