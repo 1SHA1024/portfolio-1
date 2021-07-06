@@ -118,9 +118,9 @@ const Links = styled.div`
 `;
 
 const Social = styled.div`
-  width: 10%;
+  width: 17%;
   display: flex;
-  justify-content: space-between;
-  max-width: 120px;
+  justify-content: space-around;
+  max-width: 200px;
 
 `;

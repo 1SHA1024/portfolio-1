@@ -37,6 +37,7 @@ const Container = styled.div`
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
+  
   /* align-content: flex-start; */
 `;
 
@@ -46,16 +47,22 @@ const Text = styled.div`
   flex-direction: column;
   /* align-content: flex-start; */
   line-height: 1.2;
-  font-size: 50px;
+  font-size: 45px;
   justify-content: left;
   span {
-    color: #fff;
+    color: #000;
   }
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 35px;
+  
+}
 `;
 
 const Contant = styled.div`
   /* width: 100%; */
   flex: 0.6;
+  
 
   height: 100%;
   margin: auto;

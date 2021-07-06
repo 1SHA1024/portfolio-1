@@ -33,7 +33,7 @@ function App() {
       </Router>
       {!(innerWidth <= 960) ? (
         <Contact variants={containerVarient} whileHover="hover" animate="icon">
-          {/* <img src="/blogging.svg" alt="" /> */}
+          <img src="/svg/coding.svg" alt="" />
           {/* <Web1/> */}
         </Contact>
       ) : (
@@ -54,23 +54,26 @@ const AppStyle = styled.div`
 `;
 
 const Contact = styled(motion.div)`
-  width: 70px;
-  height: 60px;
-  opacity: 0.3;
+  width: 75px;
+  height: 65px;
+  opacity: 0.7;
   background-color: #887c88;
   border-radius: 10px;
   position: fixed;
   left: 20px;
   bottom: 20px;
   overflow: hidden;
+  /* padding: 3px; */
 
   img {
     width: 100%;
     position: absolute;
     align-items: flex-end;
     justify-content: center;
-    bottom: 0;
-    left: 4px;
+    bottom: -5px;
+    left: 1px;
+    
+   
   }
 `;
 
