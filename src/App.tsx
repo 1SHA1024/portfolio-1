@@ -5,6 +5,7 @@ import LandingSection from "./components/LandingSection";
 import { BrowserRouter as Router } from "react-router-dom";
 import { motion } from "framer-motion";
 import {Web1} from './icons'
+import {CounterCom} from './components/CounterCom'
 
 import styled from "styled-components";
 
@@ -29,6 +30,7 @@ function App() {
       <Router>
           <Header />
           <LandingSection />
+          <CounterCom/>
         <Footer />
       </Router>
       {!(innerWidth <= 960) ? (
@@ -85,6 +87,6 @@ const MainLanding = styled.div`
   background-size:cover;
   opacity: 0.6;
   z-index: 1000;
-  color: #0ccda1;
+  color: hsl(166.32124352331607, 88.9400921658986%, 42.54901960784314%);
   object-fit:cover
 `;
