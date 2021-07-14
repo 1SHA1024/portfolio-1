@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Web1 from '../icons/Web1'
 function AppRouter() {
   return (
-    <Container>
+    <Container id="LandingSection">
       <Contant>
         <Text>
           <p>
@@ -19,8 +19,8 @@ function AppRouter() {
         </Text>
       </Contant>
       <Contant2>
-        {/* <img src="/blogging.svg" alt="" /> */}
-       {/* <Web1/> */}
+         <img src="/portrait.jpg" alt="" /> 
+       {/* {<Web1/> } */}
       </Contant2>
     </Container>
   );
@@ -30,10 +30,11 @@ export default AppRouter;
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: transparent;
   color: #0ccda1;
-  background-image: url("/svg/land.svg");
+   /* background-image: url("/svg/land.svg"); */
+  background-image: url("/geometry2.jpg"); 
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,7 +43,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.div`
-  /* width: 50%; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   /* align-content: flex-start; */
@@ -50,7 +51,7 @@ const Text = styled.div`
   font-size: 45px;
   justify-content: left;
   span {
-    color: #000;
+    color: #fff;
   }
 
   @media only screen and (max-width: 1024px) {
@@ -65,40 +66,55 @@ const Contant = styled.div`
   
 
   height: 100%;
+  width: 100%;
   margin: auto;
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-around;
   /* background-image: url("/blob.svg"); */
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-size: 300px 100px;
   background-position:center; 
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 `;
 
 const Contant2 = styled.div`
   /* width: 250px; */
   /* height: 40vh; */
+  width: 100%;
+  height: 80vh;
   margin: auto;
   flex: 0.4;
   /* background-color: green; */
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  overflow-y: hidden;
+  /* justify-content: space-around; */
   /* background-image: url("/portrait.jpg"); */
-  background-size: contain;
-  /* position: absolute; */
-  /* background-image: url("/blob.svg"); */
-  /* box-shadow: 0 0 5px 10px #2F4D5D; */
-  /* border-radius: 50%; */
+  /* background-size: cover; */
+  /* clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%); */
+  /* clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%); */
+  /* position: relative; */
+
+ 
 
   img {
     width: 100%;
-    max-width: 500px;
-    height: 100%;
+    height: 80vh;
+    /* max-width: 500px; */
+    /* height: 100%; */
+    /* object-fit: contain; */
     object-fit: cover;
-    border-radius: 50%;
-    opacity: 0.7;
+    /* object-position:start; */
+    
+    
+    opacity: 0.2;
+    /* margin: auto; */
+    /* position: fixed;
+     */
   }
 `;
+
+

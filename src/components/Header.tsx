@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FacebookIcon from "@material-ui/icons/Facebook";
@@ -45,11 +46,12 @@ function Header() {
         </Link>
 
         <Links>
-          <Link to="/about">About</Link>
-          <Link to="/work">Work</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/about">ABOUT</Link>
+          <Link to="/work">PROJECTS</Link>
+          <Link to="/contact">CONTACT</Link>
+          <Link to="/resume">RESUME</Link>
         </Links>
-        <Social>
+        {/* <Social>
           <a href="https://www.linkedin.com/in/tal-mamistvalov/">
             {" "}
             <LinkedInIcon style={{ fontSize: 28, color: "#00ffc3" }} />
@@ -60,7 +62,7 @@ function Header() {
           <a href="">
             <FacebookIcon style={{ fontSize: 28, color: "#00ffc3" }} />
           </a>
-        </Social>
+        </Social> */}
       </NavBar>
     </Container>
   );
@@ -108,7 +110,7 @@ const Links = styled.div`
   align-items: center;
   justify-content: space-around;
   display: flex;
-  max-width: 300px;
+  max-width: 400px;
   a {
     color: #000;
     color: #00ffc3;

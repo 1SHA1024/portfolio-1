@@ -3,12 +3,14 @@ import React from "react";
 import { RootState } from "../redux/Store";
 
 import { useSelector, useDispatch } from "react-redux";
-import { decrement, increment } from "../redux/Counter";
+import { decrement, increment,incrementByAmount } from "../redux/Counter";
 import styled from "styled-components";
+import { useState } from "react";
 
 export function CounterCom() {
   const count = useSelector((state: RootState) => state.counter.count);
   const dispatch = useDispatch();
+  const [inputNum, setinputNum] = useState(0)
 
   return (
     <Container>
@@ -18,7 +20,8 @@ export function CounterCom() {
       >
         Decrement
       </button>
-      <div>{count}</div>
+      <input type="number" id="inputNum"  value={inputNum} />
+      <div>THE CONT IS {count}</div>
 
       <button
         aria-label="Increment value"
@@ -26,17 +29,25 @@ export function CounterCom() {
       >
         Increment
       </button>
+      <button
+        aria-label="Increment by number"
+        onClick={() => dispatch(incrementByAmount(33))}
+      >
+        incrementByAmount
+      </button>
     </Container>
   );
 }
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: transparent;
   color: #0ccda1;
-  /* background-image: url("/svg/land.svg"); */
+  /* background-image: url("/flare.jpg"); */
   display: flex;
+  flex-direction: column;
+  align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
 
