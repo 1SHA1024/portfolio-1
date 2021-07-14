@@ -42,20 +42,44 @@ const Container = styled.div`
   /* align-content: flex-start; */
 `;
 
+// const TextContainer = styled.div`
+//   width: 100%;
+//   height: 80vh;
+
+// `;
+
+
 const Text = styled.div`
-  width: 100%;
+  width: 65%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
   /* align-content: flex-start; */
   line-height: 1.2;
   font-size: 45px;
   justify-content: left;
+  user-select: none;
   span {
     color: #fff;
   }
 
-  @media only screen and (max-width: 1024px) {
-    font-size: 35px;
+  @media only screen and (max-width: 1720px) {
+    font-size: 30px;
+  
+}
+  @media only screen and (max-width: 769px) {
+    font-size: 26px;
+  width: 80%;
+
+  
+}
+  @media only screen and (max-width: 361px) {
+    font-size: 14px;
+  width: 90%;
+  line-height: 1.4;
+
+
   
 }
 `;
@@ -71,12 +95,7 @@ const Contant = styled.div`
   background-color: transparent;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  /* background-image: url("/blob.svg"); */
-  /* background-attachment: fixed;
-  background-size: 300px 100px;
-  background-position:center; 
-  background-repeat: no-repeat; */
+  justify-content: center;
 `;
 
 const Contant2 = styled.div`
@@ -86,34 +105,15 @@ const Contant2 = styled.div`
   height: 80vh;
   margin: auto;
   flex: 0.4;
-  /* background-color: green; */
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   overflow-y: hidden;
-  /* justify-content: space-around; */
-  /* background-image: url("/portrait.jpg"); */
-  /* background-size: cover; */
-  /* clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%); */
-  /* clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%); */
-  /* position: relative; */
-
- 
-
   img {
     width: 100%;
     height: 80vh;
-    /* max-width: 500px; */
-    /* height: 100%; */
-    /* object-fit: contain; */
     object-fit: cover;
-    /* object-position:start; */
-    
-    
     opacity: 0.2;
-    /* margin: auto; */
-    /* position: fixed;
-     */
+
   }
 `;
 

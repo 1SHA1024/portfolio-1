@@ -20,7 +20,7 @@ export function CounterCom() {
       >
         Decrement
       </button>
-      <input type="number" id="inputNum"  value={inputNum} />
+      <input type="number" id="inputNum"   />
       <div>THE CONT IS {count}</div>
 
       <button
