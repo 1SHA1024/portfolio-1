@@ -19,7 +19,7 @@ function AppRouter() {
         </Text>
       </Contant>
       <Contant2>
-         <img src="/portrait.jpg" alt="" /> 
+         <img src="/portraitZip.jpg" alt="" /> 
        {/* {<Web1/> } */}
       </Contant2>
     </Container>
@@ -34,7 +34,7 @@ const Container = styled.div`
   background-color: transparent;
   color: #0ccda1;
    /* background-image: url("/svg/land.svg"); */
-  background-image: url("/geometry2.jpg"); 
+  background-image: url("/geometryZip.jpg"); 
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
@@ -74,7 +74,7 @@ const Text = styled.div`
 
   
 }
-  @media only screen and (max-width: 361px) {
+  @media only screen and (max-width: 561px) {
     font-size: 14px;
   width: 90%;
   line-height: 1.4;

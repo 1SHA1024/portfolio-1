@@ -65,7 +65,7 @@ const Contact = styled(motion.div)`
   left: 20px;
   bottom: 20px;
   overflow: hidden;
-  /* padding: 3px; */
+  
 
   img {
     width: 100%;
@@ -80,8 +80,7 @@ const Contact = styled(motion.div)`
 `;
 
 const MainLanding = styled.div`
-  /* background-image: url("/blogging.svg"); */
-  /* background-image: url('/logo.svg'); */
+
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;

@@ -44,6 +44,7 @@ function Header() {
             variants={svgVariants}
             initial="hidden"
             animate="visible"
+            
           >
             <g
               transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
@@ -114,6 +115,7 @@ const Container = styled.div`
   margin: auto;
   position: fixed;
   margin-top: 0.5rem;
+  z-index: 100;
 `;
 
 const NavBar = styled.div`
