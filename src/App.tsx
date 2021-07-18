@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { motion } from "framer-motion";
 import {Web1} from './icons'
 import {CounterCom} from './components/CounterCom'
-
+import ContactCom from './components/Contact'
 import styled from "styled-components";
 
 function App() {
@@ -30,6 +30,7 @@ function App() {
       <Router>
           <Header />
           <LandingSection />
+          <ContactCom/>
           <CounterCom/>
         <Footer />
       </Router>
