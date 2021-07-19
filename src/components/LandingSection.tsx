@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-// import * as Blogging from '/blogging.svg'
+
 import Web1 from '../icons/Web1'
 function AppRouter() {
   return (
@@ -15,7 +15,7 @@ function AppRouter() {
             <br />
             And i am a Full stack developer
           </p>
-          {/* <img src="/blob.svg" alt="" /> */}
+          
         </Text>
       </Contant>
       <Contant2>
@@ -40,6 +40,12 @@ const Container = styled.div`
   background-repeat: no-repeat;
   
   /* align-content: flex-start; */
+  @media only screen and (max-width: 769px) {
+  /* display: none; */
+    display: flex;
+    flex-direction: column;
+  
+}
 `;
 
 // const TextContainer = styled.div`
@@ -94,8 +100,23 @@ const Contant = styled.div`
   margin: auto;
   background-color: transparent;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  /* @media only screen and (max-width: 769px) {
+   background-image: url('/portraitZip.jpg');
+   background-size: cover;
+  
+} */
+@media only screen and (max-width: 769px) {
+  /* display: none; */
+  object-fit: contain;
+    flex: 0.4;
+    font-size: 25px;
+}
+
+
 `;
 
 const Contant2 = styled.div`
@@ -108,6 +129,14 @@ const Contant2 = styled.div`
   align-items: center;
   justify-content: center;
   overflow-y: hidden;
+  /* display: none; */
+  @media only screen and (max-width: 769px) {
+  display: none;
+  /* object-fit: cover;
+    flex: 0.6;
+   */
+    
+}
   img {
     width: 100%;
     height: 80vh;

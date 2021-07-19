@@ -8,7 +8,8 @@ import {Web1} from './icons'
 import {CounterCom} from './components/CounterCom'
 import ContactCom from './components/Contact'
 import styled from "styled-components";
-
+import Projects from './components/Projects'
+export {}
 function App() {
   const [innerWidth, setinnerWidth] = useState(window.innerWidth);
   // useEffect(() => {
@@ -30,8 +31,9 @@ function App() {
       <Router>
           <Header />
           <LandingSection />
+          <Projects/>
           <ContactCom/>
-          <CounterCom/>
+          {/* <CounterCom/> */}
         <Footer />
       </Router>
       {!(innerWidth <= 960) ? (
