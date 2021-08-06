@@ -1,0 +1,22 @@
+
+.nav_black{
+    background-color: #111;
+    /* position: fixed; */
+    z-index: 100;
+}
+
+.container{
+    z-index: 100;
+    align-items: center;
+    width: 100%;
+    opacity: 0.5;
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+    position: fixed;
+    height: 90px;
+    border-radius: 10px;
+    font-weight: 500;
+    
+
+
+}

@@ -36,14 +36,7 @@ function App() {
           {/* <CounterCom/> */}
         <Footer />
       </Router>
-      {!(innerWidth <= 960) ? (
-        <Contact variants={containerVarient} whileHover="hover" animate="icon">
-          <img src="/svg/coding.svg" alt="" />
-          {/* <Web1/> */}
-        </Contact>
-      ) : (
-        ""
-      )}
+     
     </AppStyle>
   );
 }
@@ -92,3 +85,5 @@ const MainLanding = styled.div`
   color: hsl(166.32124352331607, 88.9400921658986%, 42.54901960784314%);
   object-fit:cover
 `;
+
+

@@ -13,7 +13,7 @@ import PersonIcon from "@material-ui/icons/Person";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import Button from "@material-ui/core/Button";
-import PhoneIcon from '@material-ui/icons/Phone';
+import PhoneIcon from "@material-ui/icons/Phone";
 
 const theme = createTheme({
   palette: {
@@ -33,17 +33,14 @@ const useStyles = makeStyles((theme) => ({
     borderColor: "#333",
   },
   root: {
-    '& .MuiTextField-root': {
+    "& .MuiTextField-root": {
       // margin: theme.spacing(1),
       // width: '25ch',
-      marginTop:'20px',
-      marginBottom:'15px'
-      
+      marginTop: "20px",
+      marginBottom: "15px",
     },
   },
 }));
-
-
 
 function Contact() {
   const classes = useStyles();
@@ -54,12 +51,12 @@ function Contact() {
         <Contant>
           <Icons>
             <h3>
-            <span>Get in touch</span> , for any question you wish to contact
+              <span>Get in touch</span> , for any question you wish to contact
               me please feel the form and i will get back to you as fast as
               possible.
             </h3>
             <div>
-              <PersonIcon /> Tal Mamistvalov{" "}
+              <PersonIcon /> Tal Mamistvalov
             </div>
             <div>
               <MailOutlineIcon /> Tall5225@gmail.com
@@ -71,21 +68,21 @@ function Contact() {
               <PhoneIcon /> 054-3936061
             </div>
           </Icons>
+
           <InputFields>
-          <form className={classes.root} noValidate autoComplete="off">
-            
-            <TextField variant="outlined" id="standard-basic" label="Name" />
-            <TextField variant="outlined" id="standard-basic" label="Email" />
-            <TextField
-              multiline
-              maxRows={3}
-              variant="outlined"
-              id="standard-basic"
-              label="Message"
-            />
-            <Button variant="contained" color="primary">
-              send a message
-            </Button>
+            <form className={classes.root} noValidate autoComplete="off">
+              <TextField variant="outlined" id="standard-basic" label="Name" />
+              <TextField variant="outlined" id="standard-basic" label="Email" />
+              <TextField
+                multiline
+                maxRows={3}
+                variant="outlined"
+                id="standard-basic"
+                label="Message"
+              />
+              <Button variant="contained" color="primary">
+                send a message
+              </Button>
             </form>
           </InputFields>
         </Contant>
@@ -98,34 +95,30 @@ export default Contact;
 
 const Container = styled.div`
   width: 100%;
-  height: 60vh;
+  /* height: 60vh; */
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
   background-color: transparent;
   color: #0ccda1;
+  padding: 4rem 0;
   /* margin-top: 3rem; */
 
-  h1{
+  h1 {
     margin-top: 30px;
   }
 
   @media only screen and (max-width: 762px) {
-  flex-direction: column;
-  height: 70vh;
-  align-items: center;
-  justify-content: center;
-  /* margin-top: 1rem; */
-    
-  
-}
-
-  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 1rem; */
+  }
 `;
 
 const InputFields = styled.div`
-  width: 50%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -134,46 +127,48 @@ const InputFields = styled.div`
   margin-top: 1rem;
   justify-content: center;
   align-items: center;
+
   div {
     width: 100%;
     justify-content: center;
     align-items: center;
   }
-  
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
   @media only screen and (max-width: 762px) {
-  
-  align-items: center;
-justify-content: center;
-form{
-    width: 100%;
-    justify-content: center;
     align-items: center;
-
-
+    justify-content: center;
+    form {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
   }
-  
-}
 `;
 
 const Contant = styled.div`
-  width: 100%;
-  height: 60%;
+  width: 90%;
+  /* height: 60%; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  gap: 15px;
 
   @media only screen and (max-width: 762px) {
-  flex-direction: column;
-  height: 100%;
-  align-items: center;
-justify-content: center;
-    
-  
-}
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 const Icons = styled.div`
-  width: 40%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -192,5 +187,8 @@ const Icons = styled.div`
     align-items: center;
     display: flex;
     float: left;
+  }
+  h3 {
+    width: 100%;
   }
 `;
