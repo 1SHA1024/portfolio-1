@@ -15,6 +15,7 @@ function AppRouter() {
             <br />
             And i am a Full stack developer
           </p>
+          <a href="/talCv.docx" download="Tal Mamistvalov Cv">Download Resume</a>
           
         </Text>
       </Contant>
@@ -40,6 +41,22 @@ const Container = styled.div`
   background-repeat: no-repeat;
   
   /* align-content: flex-start; */
+
+  a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 20px;
+    
+  }
+  a:hover{
+    color:#0ccda1 ;
+    border-color: #0ccda1;
+    transition: 250ms;
+  }
   @media only screen and (max-width: 769px) {
   /* display: none; */
     display: flex;

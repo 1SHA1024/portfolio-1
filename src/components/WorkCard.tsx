@@ -3,11 +3,11 @@ import styled from "styled-components";
 import Card from "react-bootstrap/Card";
 import ListGroup from 'react-bootstrap/ListGroup'
 
-function WorkCard() {
+function WorkCard({img}:any) {
   return (
     <>
-      <Card style={{ width: "18rem" , color: '#fff' ,border:'#fff 1px solid' }}>
-        <Card.Img style={{width:"100%"}} variant="top" src="/flare.jpg" />
+      <Card style={{ width: "18rem" , color: '#fff' ,border:'#fff 1px solid',padding:"0.5rem" ,borderRadius:"10px"}}>
+        <Card.Img style={{width:"100%"}} variant="top" src={img}/>
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>
@@ -21,7 +21,7 @@ function WorkCard() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup> */}
         <Card.Body>
-          <Card.Link href="#">Card Link</Card.Link>
+          <Card.Link style={{textDecoration:"none" ,color:"#fff"}} href="#">Card Link</Card.Link>
           {/* <Card.Link href="#">Another Link</Card.Link> */}
         </Card.Body>
       </Card>

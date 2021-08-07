@@ -95,7 +95,7 @@ function Header() {
           <Link to="/about">ABOUT</Link>
           <Link to="/work">PROJECTS</Link>
           <Link to="/contact">CONTACT</Link>
-          <Link to="/resume">RESUME</Link>
+          {/* <a href="/talCv.docx" download="Tal Mamistvalov Cv">RESUME</a> */}
         </Links>
         {/* <Social>
           <a href="https://www.linkedin.com/in/tal-mamistvalov/">
@@ -164,6 +164,10 @@ const Links = styled.div`
     color: #00ffc3;
     z-index: 100000;
     text-decoration: none;
+  }
+  @media only screen and (max-width: 769px) {
+    display: none;
+    
   }
 `;
 

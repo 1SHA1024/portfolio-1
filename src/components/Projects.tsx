@@ -6,10 +6,9 @@ function Projects() {
     return (
         <Container>
             <h2>My Work</h2>
-            <WorkCard/>
-            <WorkCard/>
-            <WorkCard/>
-
+            <WorkCard img="/project1.png"/>
+            <WorkCard img="/project2.png"/>
+            <WorkCard img="/project3.png"/>
         </Container>
       
     )
@@ -24,7 +23,7 @@ const Container = styled.div`
   /* height: 700px; */
   display: flex;
   flex-wrap: wrap;
-  background-color: #685656;
+  background-color: #4C2A4B;
   color: #0ccda1;
   justify-content: center;
   align-items: center;
