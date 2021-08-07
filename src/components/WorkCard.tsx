@@ -3,13 +3,13 @@ import styled from "styled-components";
 import Card from "react-bootstrap/Card";
 import ListGroup from 'react-bootstrap/ListGroup'
 
-function WorkCard({img}:any) {
+function WorkCard({img, title}:any) {
   return (
     <>
       <Card style={{ width: "18rem" , color: '#fff' ,border:'#fff 1px solid',padding:"0.5rem" ,borderRadius:"10px"}}>
         <Card.Img style={{width:"100%"}} variant="top" src={img}/>
         <Card.Body>
-          <Card.Title>Card Title</Card.Title>
+          <Card.Title>{title}</Card.Title>
           <Card.Text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -37,9 +37,7 @@ const Container = styled.div`
   color: #0ccda1;
   display: flex;
   background-color: burlywood;
-  /* align-content: flex-start; */
   @media only screen and (max-width: 769px) {
-    /* display: none; */
     display: flex;
     flex-direction: column;
   }
