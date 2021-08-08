@@ -6,7 +6,7 @@ import ListGroup from 'react-bootstrap/ListGroup'
 function WorkCard({img, title}:any) {
   return (
     <>
-      <Card style={{ width: "18rem" , color: '#fff' ,border:'#fff 1px solid',padding:"0.5rem" ,borderRadius:"10px"}}>
+      <Card style={{ width: "18rem" , color: '#fff' ,border:'#fff 1px solid',padding:"0.5rem" ,borderRadius:"10px" , cursor:"pointer"}}>
         <Card.Img style={{width:"100%"}} variant="top" src={img}/>
         <Card.Body>
           <Card.Title>{title}</Card.Title>
@@ -21,7 +21,7 @@ function WorkCard({img, title}:any) {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup> */}
         <Card.Body>
-          <Card.Link style={{textDecoration:"none" ,color:"#fff"}} href="#">Card Link</Card.Link>
+          {/* <Card.Link style={{textDecoration:"none" ,color:"#fff"}} href="#">Card Link</Card.Link> */}
           {/* <Card.Link href="#">Another Link</Card.Link> */}
         </Card.Body>
       </Card>

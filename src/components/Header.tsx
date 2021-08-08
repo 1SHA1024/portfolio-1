@@ -1,11 +1,7 @@
 import React,{useState,useEffect} from "react";
 import styled from "styled-components";
 import '../style/Header.css'
-// import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import FacebookIcon from "@material-ui/icons/Facebook";
 import { motion } from "framer-motion";
 import SvgLogo from "../icons/Logo";
 
@@ -50,7 +46,8 @@ function Header() {
     <div className={`container ${show && "nav_black"}`}>
       <NavBar>
         <Link to="/">
-          {/* <img src="/logo.svg" alt="" /> */}
+          {/* svg logo implementing */}
+
           <motion.svg
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
@@ -88,6 +85,7 @@ function Header() {
               />
             </g>
           </motion.svg>
+
         </Link>
 
         <Links>
@@ -95,42 +93,16 @@ function Header() {
           <Link to="/about">ABOUT</Link>
           <Link to="/work">PROJECTS</Link>
           <Link to="/contact">CONTACT</Link>
+          {/* <SvgLogo/> */}
           {/* <a href="/talCv.docx" download="Tal Mamistvalov Cv">RESUME</a> */}
         </Links>
-        {/* <Social>
-          <a href="https://www.linkedin.com/in/tal-mamistvalov/">
-            {" "}
-            <LinkedInIcon style={{ fontSize: 28, color: "#00ffc3" }} />
-          </a>
-          <a href="https://github.com/tal556">
-            <GitHubIcon style={{ fontSize: 28, color: "#00ffc3" }} />
-          </a>
-          <a href="">
-            <FacebookIcon style={{ fontSize: 28, color: "#00ffc3" }} />
-          </a>
-        </Social> */}
+      
       </NavBar>
     </div>
   );
 }
 
 export default Header;
-
-// const Container = styled.div`
-//   width: 100%;
-//   height: 5.5vh;
-//   font-weight: 500;
-//   background-color: transparent;
-//   align-items: center;
-//   text-align: center;
-//   justify-content: center;
-//   display: flex;
-//   flex-direction: column;
-//   margin: auto;
-//   position: fixed;
-//   margin-top: 0.5rem;
-//   z-index: 100;
-// `;
 
 const NavBar = styled.div`
   width: 95%;

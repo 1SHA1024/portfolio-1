@@ -19,7 +19,7 @@ function AppRouter() {
             <a href="/talCv.docx" download="Tal Mamistvalov Cv">
               Download Resume
             </a>
-            <Button>dfdf</Button>
+            <Button>Behold My Work</Button>
           </ButtonContainer>
         </Text>
       </Contant>

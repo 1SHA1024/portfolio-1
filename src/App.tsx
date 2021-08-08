@@ -9,6 +9,7 @@ import {CounterCom} from './components/CounterCom'
 import ContactCom from './components/Contact'
 import styled from "styled-components";
 import Projects from './components/Projects'
+import About from "./components/About";
 export {}
 function App() {
   const [innerWidth, setinnerWidth] = useState(window.innerWidth);
@@ -31,6 +32,7 @@ function App() {
       <Router>
           <Header />
           <LandingSection />
+          {/* <About/> */}
           <Projects/>
           <ContactCom/>
           {/* <CounterCom/> */}
