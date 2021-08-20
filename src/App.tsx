@@ -4,13 +4,12 @@ import Footer from "./components/Footer";
 import LandingSection from "./components/LandingSection";
 import { BrowserRouter as Router } from "react-router-dom";
 import { motion } from "framer-motion";
-import {Web1} from './icons'
-import {CounterCom} from './components/CounterCom'
-import ContactCom from './components/Contact'
+import ContactCom from "./components/Contact";
 import styled from "styled-components";
-import Projects from './components/Projects'
+import Projects from "./components/Projects";
 import About from "./components/About";
-export {}
+export {};
+
 function App() {
   const [innerWidth, setinnerWidth] = useState(window.innerWidth);
   // useEffect(() => {
@@ -30,15 +29,13 @@ function App() {
   return (
     <AppStyle>
       <Router>
-          <Header />
-          <LandingSection />
-          {/* <About/> */}
-          <Projects/>
-          <ContactCom/>
-          {/* <CounterCom/> */}
+        <Header />
+        <LandingSection />
+        <About/>
+        <Projects />
+        <ContactCom />
         <Footer />
       </Router>
-     
     </AppStyle>
   );
 }
@@ -63,7 +60,6 @@ const Contact = styled(motion.div)`
   left: 20px;
   bottom: 20px;
   overflow: hidden;
-  
 
   img {
     width: 100%;
@@ -72,20 +68,15 @@ const Contact = styled(motion.div)`
     justify-content: center;
     bottom: -5px;
     left: 1px;
-    
-   
   }
 `;
 
 const MainLanding = styled.div`
-
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   opacity: 0.6;
   z-index: 1000;
   color: hsl(166.32124352331607, 88.9400921658986%, 42.54901960784314%);
-  object-fit:cover
+  object-fit: cover;
 `;
-
-

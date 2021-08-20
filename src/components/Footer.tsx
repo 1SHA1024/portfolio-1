@@ -48,4 +48,8 @@ const Contant = styled.div`
   padding: 10px 0;
 `;
 
-const Social = styled.div``;
+const Social = styled.div`
+a{
+  margin-right: 20px;
+}
+`;
